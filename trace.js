@@ -47,7 +47,7 @@ if (ie)
 
 function Mouse(evnt){
 
-	y = (ns||n6)?evnt.pageY+4 - window.pageYOffset:event.y+4 -15;
+	y = (ns||n6)?evnt.pageY+4 - window.pageYOffset:event.y+4 -10;
 	x = (ns||n6)?evnt.pageX+1:event.x+1;
 }
 
