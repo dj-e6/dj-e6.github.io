@@ -186,7 +186,7 @@ function update_tiny(i) {
 document.onmousemove=mouse;
 function mouse(e) {
 	if (e) {
-		y=e.pageY;
+		y=e.pageY + 10;
 		x=e.pageX;
 	}
 	else {
