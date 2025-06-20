@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <style>
+	@font-face {
+    	font-family: 'MyCustomFont';
+    	src: url('fonts/Nintendo-DS-BIOS.ttf') format('truetype');
+  	}
+
+    body {
+      text-align: center;
+      background-color: #FFFFFF;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    img {
+      max-width: 100%;
+      margin-top: 75px;
+    }
+
+    .blinking-text {
+      margin-top: 0px;
+      font-size: 24px;
+      color: black;
+      animation: blink 1s step-start infinite;
+      cursor: pointer;
+	font-family: 'MyCustomFont', sans-serif;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <body onclick="window.location.href='welcome.html'">
+  <img src="assets/e625flyer.png" alt="Welcome Image">
+  <div class="blinking-text" onclick="window.location.href='welcome.html'">
+       Touch the Touch Screen to continue
+
+  </div>
+
+  <audio id="startSound" src="assets/startSound.mp3" preload="auto"></audio>
+
+  <script>
+    // Play sound when the page finishes loading
+    window.addEventListener('load', () => {
+      const audio = document.getElementById('startSound');
+      audio.play().catch(err => {
+        console.warn("Autoplay blocked. User interaction may be required.");
+      });
+    });
+  </script>
+ <script type="text/javascript" src="trace.js"></script>
+</body>
+</html>
+
