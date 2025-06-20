@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>gallery</title>
+	<link rel="icon" href="assets/skullnote.png" type="image/x-icon">
+  <style>
+        @font-face {
+        font-family: 'MyCustomFont';
+        src: url('fonts/Nintendo-DS-BIOS.ttf') format('truetype');
+        }
+    body {
+      text-align: center;
+      background-color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 30px auto;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+
+    .tab {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 30px;
+      cursor: pointer;
+      font-family: 'MyCustomFont', sans-serif;
+
+    }
+  
+    .tab:hover {
+      text-decoration: underline;
+    }
+
+.page-title {
+  font-family: 'MyCustomFont', sans-serif; /* Replace with your actual font */
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+} 
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery-item {
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.caption {
+  font-family: 'MyCustomFont', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.page-cr {
+  font-family: 'MyCustomFont', sans-serif; 
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0px;
+} 
+
+</style>
+</head>
+<body>
+<a href="welcome.html">
+  <img src="assets/deejaye6.png" alt="Top Image" />
+</a>
+  <div class="tabs">
+    <a href="mixes.html" class="tab">mixes</a>
+    <a href="gallery.html" class="tab">gallery</a>
+  </div>
+
+<div style="height: 30px;"></div>
+
+<div class="tabs">
+  <a href="https://www.youtube.com/@dje6" class="tab">youtube</a>
+  <a href="https://www.instagram.com/_dje6/" class="tab">instagram</a>
+  <a href="https://soundcloud.com/dj-e6" class="tab">soundcloud</a>
+</div>
+
+<h1 class="page-title">GALLERY</h1>
+
+<div class="gallery">
+  <div class="gallery-item" onclick="toggleExpand(this)">
+    <img src="assets/appleholePic.jpg" alt="Caption 1">
+    <div class="caption">performing at susan's applehole in oct 2024. photo by tee vera.</div>
+  </div>
+   <div class="gallery-item" onclick="toggleExpand(this)">
+    <img src="assets/appleholeFlyer.jpg" alt="Caption 2">
+    <div class="caption">flyer for heavy hearts event at susan's applehole oct 2024. designed by tee vera.</div>
+</div>
+  <div class="gallery-item" onclick="toggleExpand(this)">
+    <img src="assets/abfr.png" alt="Caption 6">
+    <div class="caption">flyer for my guest spot on a break from reality radio show on wnyu. designed and illustrated by limesqueezi 2025.</div>
+  </div>
+<div class="gallery-item" onclick="toggleExpand(this)">
+    <img src="assets/iHeartGarage.jpeg" alt="Caption 3">
+    <div class="caption">cover art for i &lt;3 garage released june 2024. designed by me.</div>
+  </div>
+<div class="gallery-item" onclick="toggleExpand(this)">
+    <img src="assets/realLife.jpg" alt="Caption 4">
+    <div class="caption">flyer for my wluw radio show real life.  designed by me 2024.</div>
+  </div>
+  <div class="gallery-item" onclick="toggleExpand(this)">
+    <img src="assets/12oclock.jpeg" alt="Caption 5">
+    <div class="caption">flyer for my wluw radio show 12 o' clock mix. designed by me 2023. featuring dj e6 characture illustrated by anna h.</div>
+  </div>
+<img src="assets/skullnote.png" alt="Extra Image" style="display: block; margin-top: 0px; max-width: 75%;">
+<!--<h1 class="page-cr">©2025 dj e6</h1-->
+<script type="text/javascript" src="trace.js"></script>
+</body>
+</html>

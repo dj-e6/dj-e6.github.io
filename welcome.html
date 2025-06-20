@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>home</title>
+	<link rel="icon" href="assets/skullnote.png" type="image/x-icon">
+  <style>
+	@font-face {
+  	font-family: 'MyCustomFont';
+  	src: url('fonts/Nintendo-DS-BIOS.ttf') format('truetype');
+	}
+    body {
+      text-align: center;
+      background-color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0px;
+    }
+    
+    img {
+      display: block;
+      margin: 0 auto 30px auto;
+    }
+    
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+
+    .tab {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 30px;
+      cursor: pointer;
+      font-family: 'MyCustomFont', sans-serif;
+ 
+    }
+    
+    .tab:hover {
+      text-decoration: underline;
+    }
+
+	.blurb {
+  	margin-top: 50px;
+  	font-size: 20px;
+  	color: #333;
+  	max-width: 600px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	font-family: 'MyCustomFont', sans-serif; /* use your custom font here too */
+  	line-height: 1.4;
+	}
+
+.blinking-text {
+  margin-top: 20px;
+  font-size: 30px;
+  color: black;
+  font-family: 'MyCustomFont', sans-serif;
+  cursor: pointer;
+  animation: blink 1s step-start infinite;
+  user-select: none; /* prevent text highlight on click */
+}
+ .blinking-text:hover {
+      text-decoration: underline;
+    }
+.page-title {
+  font-family: 'MyCustomFont', sans-serif; /* Replace with your actual font */
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.page-cr {
+  font-family: 'MyCustomFont', sans-serif; /* Replace with your actual font */
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0px;
+} 
+ 
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+  </style>
+</head>
+<body>
+  <img src="assets/deejaye6.png" alt="Top Image" />
+  
+  <div class="tabs">
+    <a href="mixes.html" class="tab">mixes</a>
+    <a href="gallery.html" class="tab">gallery</a>
+  </div>
+
+<div style="height: 30px;"></div>
+        
+<div class="tabs">
+  <a href="https://www.youtube.com/@dje6" class="tab">youtube</a>
+  <a href="https://www.instagram.com/_dje6/" class="tab">instagram</a>
+  <a href="https://soundcloud.com/dj-e6" class="tab">soundcloud</a>
+</div>
+
+ <div class="blurb">
+           im dj e6,  I'm a chicago based dj specializing in dance music (jungle, house, garage).  ive been spinning at 88.7 WLUW for over 3 years.  i love music!
+         </div>
+
+<div class="blinking-text" onclick="window.location.href='mailto:3ethan66@gmail.com'">
+ --&gt;  book now! &lt;--
+</div>
+<img src="assets/skullnote.png" alt="Extra Image" style="display: block; margin-top: 0px; max-width: 75%;">
+<h1 class="page-cr">link my site</h1>
+<div style="text-align: center;">
+<a href="https://dj-e6.github.io" target="_blank">
+  <img src="assets/dje6.gif" alt="DJ Banner">
+</a>
+</div>
+<h1 class="page-cr">©2025 dj e6</h1>
+<script type="text/javascript" src="trace.js"></script>
+</body>
+</html>
+
